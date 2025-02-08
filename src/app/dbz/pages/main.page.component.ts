@@ -1,6 +1,5 @@
 import { Character } from './../interfaces/character.interface';
-import { Component, OnInit } from '@angular/core';
-import { Character } from '../interfaces/character.interface';
+import { Component  } from '@angular/core';
 import { DbzService } from '../services/dbz.services';
 
 @Component({
