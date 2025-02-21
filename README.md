@@ -44,6 +44,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ```bash
 1.- Creando el Proyecto (ng new NombreProyecto)
-2.- Install BootStrap (npm install bootstrap @popperjs/core)
+2.- Configurando bootstrap en el proyecto (npm install bootstrap @popperjs/core)
+3.- Counter Page-Component
 ```
 
