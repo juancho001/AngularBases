@@ -49,6 +49,6 @@ For more information on using the Angular CLI, including detailed command refere
 4.- Creando el NavBar-Component y el Footer-Component
 5.- Reestructurando del App-Component
 6.- Ajustando del App-Routes
-
+7.- Uso de Señales (Signals) en Angular
 ```
 
