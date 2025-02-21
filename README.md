@@ -47,6 +47,7 @@ For more information on using the Angular CLI, including detailed command refere
 2.- Configurando bootstrap en el proyecto (npm install bootstrap @popperjs/core)
 3.- Counter Page-Component
 4.- Creando el NavBar-Component y el Footer-Component
+5.- Restructurando del App-Component
 
 ```
 
