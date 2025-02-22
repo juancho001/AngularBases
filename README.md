@@ -58,5 +58,6 @@ For more information on using the Angular CLI, including detailed command refere
 # Sección 5 Expandiendo las bases
 ```bash
 1.- RouterLink y RouterLinkActive 
+2.- DragonballPageComponent
 ```
 
