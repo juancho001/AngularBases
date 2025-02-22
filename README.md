@@ -52,5 +52,6 @@ For more information on using the Angular CLI, including detailed command refere
 7.- Uso de Señales (Signals) en Angular
 8.- Creando el Hero-Page-Component
 9.- Actualizando las rutas
+10. Fin de la Sección 4
 ```
 
