@@ -1,25 +1,26 @@
 <h1 class="text-center">Dragon Ball Page</h1>
 <hr>
 
-<div class="row">
-
-  <div class="col-12 col-sm-6 d-grid my-3" >
-
-    <div class="input-group mb-3">
+<div class="row mx-2">
+  <div class="col-12 col-sm-6 my-5 border p-4" >
+    <h3 class="input-group mb-4 mx-3">Agregar un Luchador</h3>
+    <div class="input-group mb-4 mx-3">
       <input type="text" class="form-control" placeholder="Nombre del Luchador" aria-label="Username" aria-describedby="basic-addon1">
     </div>
-
-    <div class="input-group mb-3">
+    <div class="input-group mb-4 mx-3">
       <input type="number" class="form-control" placeholder="Poder del Luchador" aria-label="Username" aria-describedby="basic-addon1">
     </div>
-
-    <button class="btn btn-primary">Agregar Luchador</button>
+    <button class="btn btn-primary mx-3">Agregar Luchador</button>
   </div>
-  <div class="col-12 col-sm-6">
-    <h3>Listado de Luchadores</h3>
-    <ul>
+  <div class="col-12 col-sm-6 my-5 border p-4">
+    <h3 class="input-group mb-3 mx-3">Listado de Luchadores</h3>
+    <ul class="list-group list-group-numbered">
       @for (item of characters(); track item.id) {
-        <li>Luchador : <span> <strong> {{item.nombre}}  </strong></span> -  Poder de Pelea : <strong class="text-danger"> {{item.poder}} </strong></li>
+        <li class="list-group-item d-flex justify-content-between align-items-start px-1">Luchador:<span><strong> &ThinSpace; {{item.nombre}}</strong></span>Poder de Pelea:&ThinSpace;
+          <strong
+          [class.text-success] = "item.poder > 9000"
+          [class.text-danger] = "item.poder <= 7000"
+          > {{item.poder}} </strong></li>
       }
     </ul>
   </div>
