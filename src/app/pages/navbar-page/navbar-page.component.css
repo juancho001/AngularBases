@@ -1,0 +1,6 @@
+nav ul li a:hover{
+  color: yellow;
+  font-size: 18px;
+  text-decoration: underline;
+
+}
