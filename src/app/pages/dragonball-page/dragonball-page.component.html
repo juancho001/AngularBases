@@ -16,11 +16,13 @@
     <h3 class="input-group mb-3 mx-3">Listado de Luchadores</h3>
     <ul class="list-group list-group-numbered">
       @for (item of characters(); track item.id) {
-        <li class="list-group-item d-flex justify-content-between align-items-start px-1">Luchador:<span><strong> &ThinSpace; {{item.nombre}}</strong></span>Poder de Pelea:&ThinSpace;
-          <strong
-          [class.text-success] = "item.poder > 9000"
-          [class.text-danger] = "item.poder <= 7000"
-          > {{item.poder}} </strong></li>
+        @if (item.poder > 500) {
+          <li class="list-group-item d-flex justify-content-between align-items-start px-1">Luchador:<span><strong> &ThinSpace; {{item.nombre}}</strong></span>Poder de Pelea:&ThinSpace;
+            <strong [class.text-success] = "item.poder > 9000" [class.text-danger] = "item.poder <= 7000" > {{item.poder}} </strong>
+          </li>
+        }@else{
+          <li class="list-group-item d-flex justify-content-between align-items-center px-1"><strong> El luchado tiene un poder de pelea muy bajo. </strong></li>
+        }
       }
     </ul>
   </div>

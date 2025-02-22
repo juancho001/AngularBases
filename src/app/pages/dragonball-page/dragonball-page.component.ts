@@ -20,6 +20,7 @@ export class DragonballPageComponent {
     {id:2, nombre:'Vegeta',poder:8500},
     {id:3, nombre:'Picolo',poder:7500},
     {id:4, nombre:'Kriling',poder:5500},
+    {id:5, nombre:'Kriling',poder:500},
   ]);
 
 }
