@@ -13,5 +13,5 @@ import { FooterPageComponent } from './pages/footer-page/footer-page.component';
   //styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  title = 'Bases de Angular';
 }
