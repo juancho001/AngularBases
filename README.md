@@ -62,5 +62,6 @@ For more information on using the Angular CLI, including detailed command refere
 3.- @For - realizar interacciones de elementos
 4.- ngClass - Clases de CSS de forma condicional
 5.- @If - Mostrando elementos de forma condicional
+6.- Trabajando con los Inputs - Agregando Personajes
 ```
 
