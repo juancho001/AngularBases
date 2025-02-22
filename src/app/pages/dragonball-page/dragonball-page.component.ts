@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+
+interface Character{
+  id:number,
+  nombre:string,
+  poder:number
+}
+
 
 @Component({
   selector: 'app-dragonball-page',
@@ -7,5 +14,12 @@ import { Component } from '@angular/core';
   styleUrl: './dragonball-page.component.css'
 })
 export class DragonballPageComponent {
+
+  characters = signal<Character[]>([
+    {id:1, nombre:'Goku',poder:9500},
+    {id:2, nombre:'Vegeta',poder:8500},
+    {id:3, nombre:'Picolo',poder:7500},
+    {id:4, nombre:'Kriling',poder:5500},
+  ]);
 
 }

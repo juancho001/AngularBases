@@ -59,5 +59,6 @@ For more information on using the Angular CLI, including detailed command refere
 ```bash
 1.- RouterLink y RouterLinkActive 
 2.- DragonballPageComponent
+3.- @For - realizar interacciones de elementos
 ```
 
