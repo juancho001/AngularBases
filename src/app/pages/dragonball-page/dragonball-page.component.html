@@ -1,46 +1,10 @@
 <h1 class="text-center">Dragon Ball Page</h1>
 <hr>
-
-<div class="row mx-2">
-  <div class="col-12 col-sm-6 my-5 border p-4" >
-    <h3 class="input-group mb-4 mx-3">Agregar un Luchador</h3>
-    <div class="input-group mb-4 mx-3">
-      <input type="text"
-      class="form-control"
-      placeholder="Nombre del Luchador"
-      aria-label="Username"
-      aria-describedby="basic-addon1"
-      #txtNombre
-      [value]="name()"
-      (change)="name.set(txtNombre.value)"
-      >
-      <!-- [value]="name()" -->
-    </div>
-    <div class="input-group mb-4 mx-3">
-      <input type="number"
-      class="form-control"
-      placeholder="Poder del Luchador"
-      aria-label="Username"
-      aria-describedby="basic-addon1"
-      #txtPower
-      [value]="power()"
-      (input)="power.set(+txtPower.value)"
-      >
-    </div>
-    <button class="btn btn-primary mx-3" (click)="sendLuchador()">Agregar Luchador</button>
+<div class="row d-flex m-3 justify-content-center">
+  <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+    <dragonball-character-add (newCharacter)="addCharacter($event)"></dragonball-character-add>
   </div>
-  <div class="col-12 col-sm-6 my-5 border p-4">
-    <h3 class="input-group mb-3 mx-3">Listado de Luchadores</h3>
-    <ul class="list-group list-group-numbered">
-      @for (item of characters(); track item.id) {
-        @if (item.poder > 500) {
-          <li class="list-group-item d-flex justify-content-between align-items-start px-1">Luchador:<span><strong> &ThinSpace; {{item.nombre}}</strong></span>Poder de Pelea:&ThinSpace;
-            <strong [class.text-success] = "item.poder > 9000" [class.text-danger] = "item.poder <= 7000" > {{item.poder}} </strong>
-          </li>
-        }@else{
-          <li class="list-group-item d-flex justify-content-between align-items-center px-1"><strong> El luchado tiene un poder de pelea muy bajo. </strong></li>
-        }
-      }
-    </ul>
+  <div class="col-sm-12 col-md-6 col-lg-6 p-2">
+    <dragonball-character-list listName = "Listado de Luchadores" [characters]="characters()"></dragonball-character-list>
   </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, signal } from '@angular/core';
+import { CharacterListComponent } from "../../components/dragonball/character-list/character-list.component";
+import { CharacterAddComponent } from "../../components/dragonball/character-add/character-add.component";
 
 interface Character{
   id:number,
@@ -9,7 +11,7 @@ interface Character{
 
 @Component({
   selector: 'app-dragonball-page',
-  imports: [],
+  imports: [CharacterListComponent, CharacterAddComponent],
   templateUrl: './dragonball-page.component.html',
   styleUrl: './dragonball-page.component.css'
 })
@@ -26,25 +28,11 @@ export class DragonballPageComponent {
     {id:5, nombre:'Kriling',poder:500},
   ]);
 
-  sendLuchador(){
-    if( !this.name || !this.power() || this.power() <= 0){
-      return;
-    }else{
-      const newLuchador: Character = {
-        id:(this.characters.length + 1),
-        nombre: this.name(),
-        poder: this.power()
-      }
-
-      // this.characters().push(newLuchador);
-      this.characters.update( (list) => [...list, newLuchador]);
-      this.resetFields();
-    }
+  addCharacter(character:Character){
+    this.characters.update(
+      list => [... list,character]
+    )
   }
 
-  resetFields(){
-    this.name.set('');
-    this.power.set(0);
-  }
-
+  
 }
