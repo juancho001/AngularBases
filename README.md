@@ -67,5 +67,6 @@ For more information on using the Angular CLI, including detailed command refere
 8.- Signal Inputs y Creación de componentes
 9.- Output - Emitir valores
 10. Servicios
+11. Local Storage y el uso de effects
 ```
 
