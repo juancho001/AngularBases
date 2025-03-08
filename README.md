@@ -66,5 +66,6 @@ For more information on using the Angular CLI, including detailed command refere
 7.- Función input - Comunicación entre componentes
 8.- Signal Inputs y Creación de componentes
 9.- Output - Emitir valores
+10. Servicios
 ```
 
