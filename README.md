@@ -68,5 +68,6 @@ For more information on using the Angular CLI, including detailed command refere
 9.- Output - Emitir valores
 10. Servicios
 11. Local Storage y el uso de effects
+12. LinkedSignal - Cargar datos del LocalStorage
 ```
 
