@@ -1,0 +1,27 @@
+<div class="border p-4">
+  <h3 class="input-group mb-4 text-center">Agregar un Luchador</h3>
+  <div class="input-group mb-4">
+    <input type="text"
+    class="form-control"
+    placeholder="Nombre del Luchador"
+    aria-label="Username"
+    aria-describedby="basic-addon1"
+    #txtNombre
+    [value]="name()"
+    (change)="name.set(txtNombre.value)"
+    >
+    <!-- [value]="name()" -->
+  </div>
+  <div class="input-group mb-4">
+    <input type="number"
+    class="form-control"
+    placeholder="Poder del Luchador"
+    aria-label="Username"
+    aria-describedby="basic-addon1"
+    #txtPower
+    [value]="power()"
+    (input)="power.set(+txtPower.value)"
+    >
+  </div>
+  <button class="btn btn-primary" (click)="sendLuchador()">Agregar Luchador</button>
+</div>
