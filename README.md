@@ -69,5 +69,6 @@ For more information on using the Angular CLI, including detailed command refere
 10. Servicios
 11. Local Storage y el uso de effects
 12. LinkedSignal - Cargar datos del LocalStorage
+13. Despliegues y HashRouter usando Netlify (https://basesangular001.netlify.app/#/)
 ```
 
